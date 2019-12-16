@@ -1,15 +1,15 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
+import java.util.concurrent.CountDownLatch;
 
 public class Test02 {
-    public static void main(String[] args) {
-        List list = new ArrayList();
-        for (int i = 0; i < 2; i++) {
+    public static void main(String[] args) throws InterruptedException {
+       CountDownLatch count = new CountDownLatch(6);
+        for (int i = 0; i < 6; i++) {
            new Thread(() -> {
-               list.add(UUID.randomUUID().toString().substring(0,6)) ;
-               System.out.println(list);
-           },String.valueOf(i)).start();
+               System.out.println(Thread.currentThread().getName()+"离开教室");
+              count.countDown();
+               },String.valueOf(i)).start();
         }
+        count.await();
+        System.out.println(Thread.currentThread().getName()+"关门");
     }
 }
