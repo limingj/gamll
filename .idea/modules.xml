@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/es-demo/es-demo.iml" filepath="$PROJECT_DIR$/es-demo/es-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gamll.iml" filepath="$PROJECT_DIR$/gamll.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread_8lock/thread_8lock.iml" filepath="$PROJECT_DIR$/thread_8lock/thread_8lock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/threadtest/threadtest.iml" filepath="$PROJECT_DIR$/threadtest/threadtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webtest/webtest.iml" filepath="$PROJECT_DIR$/webtest/webtest.iml" />
+    </modules>
+  </component>
+</project>
